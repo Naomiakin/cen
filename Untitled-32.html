@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial of 19</title>
+  </head>
+  <body>
+    <p id="result"></p>
+
+    <script type="text/javascript">
+      // Function to calculate the factorial of a number
+      function factorial(num) {
+        if (num === 0 || num === 1) {
+          return 1;
+        }
+        let fact = 1;
+        for (let i = 1; i <= num; i++) {
+          fact *= i;
+        }
+        return fact;
+      }
+
+      // Calculate the factorial of 19 the last two numbers of my matric number
+      let factResult = factorial(19);
+
+      document.getElementById(
+        "result"
+      ).textContent = `The factorial of 19 is: ${factResult}`;
+    </script>
+  </body>
+</html>
